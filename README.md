@@ -35,6 +35,11 @@ Send notifications to Slack
 
 # Usage (with Window):
 
+* Install library
+```bash
+pip install -r requirements.txt 
+```
+
 * First train the anomaly detection model, run the file:
 
 ```bash
