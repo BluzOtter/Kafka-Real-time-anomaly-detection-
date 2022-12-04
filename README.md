@@ -52,7 +52,7 @@ bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --topic anomalies
 * Check the topics are created
 
 ```bash
-bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list
+bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --list
 ```
 
 * Check file **settings.py** and edit the variables if needed
