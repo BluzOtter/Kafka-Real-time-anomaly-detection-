@@ -68,10 +68,18 @@ bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --list
 python producer.py
 ```
 
+```bash
+bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic transactions
+```
+
 * Start the anomalies detector, run the file
 
 ```bash
 python anomalies_detector.py
+```
+
+```bash
+bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic anomalies
 ```
 
 * Start sending alerts to Slack, make sure to register the env variable SLACK_API_TOKEN,
